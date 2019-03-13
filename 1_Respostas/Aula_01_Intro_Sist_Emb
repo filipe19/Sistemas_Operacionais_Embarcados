@@ -1,0 +1,36 @@
+1. O que são sistemas embarcados?
+R: São sistemas nos quais o computador é completamente dedicado ao propósito de sua aplicação.
+
+2. O que são sistemas microprocessados? 
+R: São sistemas que utilizam microprocessadores. Eles podem incluir chips externos de memória e circuitos periféricos de interface, 
+especialmente em sistemas mais complexos. Os processadores utilizados podem ser de tipos que vão desde o propósito geral 
+(computadores de uso pessoal e smartphones, por exemplo) até os especializados em determinada classe de cálculos. 
+
+3. Apresente aplicações de sistemas embarcados:
+(a) Para a indústria automotiva; 
+R: Muitos automóveis possuem sistemas embarcados que são responsáveis em controlar partes como, por exemplo, o sistema de freios ABS, 
+Air Bag, sensores de chuva, nível de gasolina e o monitoramento da pressão dos pneus. 
+
+(b) Para eletrodomésticos; 
+R: Microondas: possui sistema embarcado que coleta dados como tempo de duração, tipo de comida ou potência do aquecimento e processa 
+as informações de controle para selecionar o modo do dispositivo ao adequado tipo de comida;
+Máquina de lavar: possuem sistema embarcado que coleta dados como tipo de roupa a ser lavada e tempo de lavagem e processa esses 
+dados de modo a controlar água, produto de limpeza injetados e a velocidade do eixo central e da centrífuga. 
+
+(c) Para automação industrial.
+R: A automação industrial tem como objetivo centralizar o monitoramento e o controle de processos e atingir a redução de custos de 
+manutenção em um dado sistema industrial, assim sendo, pode-se verificar o uso de sistemas embarcados em equipamentos que fazem o 
+acionamento e controle de motores, como o inversor de frequência (permite o controle de vários parâmetros do motor como torque e 
+velocidade), o soft-start (permite apenas a partida suave dos motores elétricos afim de proteger a rede elétrica contra picos elevados
+de corrente elétrica) e o servo-conversor (trabalha em par com o servo-motor e é utilizado em acionamentos de grande precisão, em eixos 
+de máquinas, como em CNC e robôs industriais).
+
+4. Cite arquiteturas possíveis e as diferenças entre elas.
+R: Raspberry Pi: Possui um Hardware mais completo que o Arduino, já que dispõe de saída de vídeo e um processador de 700 MHz.
+Arduino: Utiliza o microcontrolador Atmel AVR numa placa com alguns adicionais como regulador de tensão, oscilador de 16 MHz e memória 
+flash embutidos. Ambos os dispositivos são muito empregados em projetos, pela aplicabilidade e fácil acesso. 
+
+5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+R: Optou-se por usar o Raspberry Pi devido a sua arquitetura do hardware, onde verifica-se que o processador ARM possui capacidade de 
+embutir um sistema operacional como o Linux, além de dispor de uma placa de vídeo integrada, a qual pode facilitar a implementação da 
+interface. 
