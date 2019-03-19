@@ -1,0 +1,83 @@
+1. Por que o Linux recebeu esse nome? 
+R: Linux = Linus + Unix 
+Unix é o nome de um kernel e sistema operacional de grande porte que possui uma versão gratuita e com código fonte disponível, o Minix.
+O estudante de Ciências da Computação da Universidade de Helsinki (Finlândia - 1991), Linus Torvalds, iniciou um projeto com o intuito 
+de criar um núcleo de sistema operacional. Utilizando o Minix, ele desenvolveu um Sistema Operacional mais poderoso, o Linux.
+
+2. O que são daemons?
+R: É um programa de computador executado como um processo em plano de fundo, não sendo controlado diretamente por um usuário interativo.
+
+3. O que é o shell?
+R: É uma interface de usuário para acessar os serviços de um sistema operacional, a linha de comando.
+E é a camada mais externa em torno do núcleo do S.O.
+
+4. Por que é importante evitar executar o terminal como super-usuário?
+R: Por que ao acessar como administrador, passa-se a ter todo o controle do Linux, fazendo-se necessário ter domínio das implicações ou 
+ser um usuário avançado. Com o root, o sistema pode ser modificado de forma irreversível, podendo danificá-lo.
+
+5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+R: TAB.
+
+6. Quais botões do teclado apresentam instruções escritas anteriormente?
+R: As setas: para cima e para baixo.
+
+7. Apresente os respectivos comandos no terminal para: 
+(a) Obter mais informações sobre um comando. 
+R: comando "man"
+
+(b) Apresentar uma lista com os arquivos dentro de uma pasta.
+R: comando "ls"
+
+(c) Apresentar o caminho completo da pasta.
+R: comando "pwd"
+
+(d) Trocar de pasta.
+R: comando "cd" 
+
+(e) Criar uma pasta. 
+R: comando "mkdir"
+
+(f) Apagar arquivos definitivamente. 
+R: comando "rm"
+
+(g) Apagar pastas definitivamente. 
+R: comando "rmdir"
+
+(h) Copiar arquivos.
+R: comando "cp"
+
+(i) Copiar pastas. 
+R: comando "cp -r"
+
+(j) Mover arquivos. 
+R: comando "mv"
+
+(k) Mover pastas. 
+R: comando "mv"
+
+(l) Renomear pastas.
+R: comando "mv"
+
+(m) Apresentar o conteúdo de um arquivo. 
+R: comando "cat"
+
+n) Apresentar o tipo de um arquivo.
+R: comando "file"
+
+(o) Limpar a tela do terminal.
+R: comando "clear"
+
+(p) Encontrar ocorrências de palavras-chave em um arquivo-texto
+R: comando "grep"
+
+(q) Ordenar informações em um arquivo-texto. 
+R: comando "sort"
+
+(r) Substituir ocorrências de palavras-chave em um arquivo-texto.
+R: comando "sed -e"
+
+(s)  Conferir se dois arquivos são iguais.
+R: comando "diff"
+
+(t) Escrever algo na tela.
+R: comando "echo" 
