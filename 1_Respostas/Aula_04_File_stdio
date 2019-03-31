@@ -53,7 +53,7 @@ $ ./cat_falsificado ola.txt
 $ Ola mundo cruel! Ola universo ingrato!
 Crie um código em C que conta a ocorrência de uma palavra-chave em um arquivo-texto, e escreve o resultado no terminal. 
 Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 
-'busca_e_conta':
+' busca_e_conta ':
 $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./busca_e_conta Ola ola.txt
 $ 'Ola' ocorre 2 vezes no arquivo 'ola.txt'.
