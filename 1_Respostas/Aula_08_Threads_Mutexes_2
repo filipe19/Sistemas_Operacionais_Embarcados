@@ -214,7 +214,7 @@ int main() {
     return 0;
 }
 
-Repita o exercício anterior, mas calcule a variância do vetor ao invés da média.
+4. Repita o exercício anterior, mas calcule a variância do vetor ao invés da média.
 (a)
 R:
 #include <stdio.h>
