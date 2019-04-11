@@ -1,0 +1,55 @@
+1. Quais são as vantagens e desvantagens em utilizar:
+(a) fork?
+R: Os filho executam suas respecticvas tarefas e possuem seu espaço de memória protegido, e 
+como desvantagem, apresenta dificuldades na comunicação IPC.
+
+(b) threads?
+R: É possível, com uma aplicação, rodar várias threads. Elas compartilham o msmo espaço de memória, tornando-a mais fácil, porém com 
+maior risco de acorrer de dados corrompidos.
+
+2. Quantas threads serão criadas após as linhas de código a seguir? Quantas coexistirão? Por quê?
+(a) 
+void* funcao_thread_1(void *arg);
+void* funcao_thread_2(void *arg);
+
+int main (int argc, char** argv)
+{
+	pthread_t t1, t2;
+	pthread_create(&t1, NULL, funcao_thread_1, NULL);
+	pthread_create(&t2, NULL, funcao_thread_2, NULL);
+	pthread_join(t1, NULL);
+	pthread_join(t2, NULL);
+	return 0;
+}
+
+R: Depois dos creates, terão 3 threads, a principal e outras duas.
+
+(b) 
+void* funcao_thread_1(void *arg);
+void* funcao_thread_2(void *arg);
+
+int main (int argc, char** argv)
+{
+	pthread_t t1, t2;
+	pthread_create(&t1, NULL, funcao_thread_1, NULL);
+	pthread_join(t1, NULL);
+	pthread_create(&t2, NULL, funcao_thread_2, NULL);
+	pthread_join(t2, NULL);
+	return 0;
+}
+
+R: Existirão duas,  em seguida, uma será finalizada, então terão outras duas e depois terá apenas a main.
+
+3. Apresente as características e utilidades das seguintes funções:
+(a) pthread_setcancelstate()
+
+R: Com essa função, o estado de cancelamento pode ser padrão (ativado) ou desativado. Caso esteja desativado, o cancelamento 
+fica na fila até que o cancelamento fique ativado. Se estiver ativo, o tipo de cancelamento determina quando o cancelamento ocorrerá.
+
+(b) pthread_setcanceltype()
+
+R: Com essa função, o tipo de cancelamento pode ser assincrono ou padrão (adiado), sendo que quando fica em assíncrono, 
+o cancelamento pode acontecer a qualquer momento. Já quando está em adiado, ocorrerá um atraso no cancelamento até a 
+próxima thread chame uma função (de cancelamento).
+
+(DICA: elas são relacionadas à função pthread_cancel().)
