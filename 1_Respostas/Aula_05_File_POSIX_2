@@ -198,7 +198,7 @@ int main(int argc , char const *argv[] ) {
 	return 0;
 }
 
-7. Crie um código em C que conta a ocorrência de uma palavra-chave em um arquivo-texto, e escreve o resultado no terminal. 
+7. Crie um código em C que conta a ocorrência de uma palavra-chave em um arquivo-texto, e escreve o resultado no terminal . 
 
 Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de
 'busca_e_conta':
@@ -219,7 +219,7 @@ int main( int argc, char const *argv[] ) {
     int len = strlen(srch);
 	int count = 0;
 
-	while (( where = strstr(where, srch))) {
+	while (( where = strstr( where, srch))) {
         where += len;
         count++;
     }
