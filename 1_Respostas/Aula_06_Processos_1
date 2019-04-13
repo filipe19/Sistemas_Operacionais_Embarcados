@@ -36,11 +36,11 @@ R: Essa função permite: executar um programa no lugar atual (current path).
 (b) execv()?
 R: Essa função torna possível que: a lista de argumentos do novo processo seja nula.
 
-(c) exece()?
+(c) exece() ?
 R:Essa função permite utilizar: argumento adicional no novo processo.
 
 (d) execvp()?
-R:permite lista de argumentos nula e procura do programa no current path.
+R:permite lista de argumentos nula e procura do programa no current path .
 
 (e) execve()?
 R: Essa função permite utilizar: procurar programa no current path e argumento adicional. 
