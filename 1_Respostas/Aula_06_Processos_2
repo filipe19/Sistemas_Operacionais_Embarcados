@@ -92,16 +92,16 @@ R:
 #include <errno.h>
 #include <sys/signal.h>
 
-int v_global = 0; // Variavel global para este exemplo
+int v_global = 0; // variavel global para esse exemplo
 void Incrementa_Variavel_Global(pid_t id_atual ) {
 	v_global++;
-	printf("ID do processo que executou esta funcao = %d\n", id_atual) ;
+	printf("ID do processo que executou essa funcao = %d\n", id_atual) ;
 	printf("v_global = %d\n", v_global );
 }
 
 int main(void) {
     int pid_filho_1, pid_filho_2, pid_filho_3,  pid_pai;
-    printf("Pid pai antes do primeiro Fork() -  %d\n", getpid());
+    printf("Pid pai antes do primeiro Fork() -  %d\n", getpid()) ;
     pid_filho_1 = fork() ;
 
     if (pid_filho_1 == 0 ) {
@@ -120,7 +120,7 @@ int main(void) {
 			    Incrementa_Variavel_Global( getpid());
 		    } else {
 			    sleep(1);
-			    printf(" Pid pai  depois do terceiro Fork(), o terceiro filho já foi criado-  %d\n", getpid());
+			    printf(" Pid pai  depois do terceiro Fork(), o terceiro filho já criado -  %d\n", getpid());
 		    }
 	    }
 	}
