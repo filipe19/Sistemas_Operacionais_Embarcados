@@ -1,26 +1,29 @@
 1. Com relação ao modelo cliente-servidor, responda:
 (a) Quais são as características básicas deste modelo?
-R:
+R: Este modelo consiste em uma estrutura de aplicação que distribui tarefas e cargas de trabalho entre os fornecedores 
+de um recurso ou serviço, designados como os requerentes do serviço, clientes ou servidores.
 
 (b) Quais são as características básicas do servidor?
-R:
+R:  Algumas características básicas do servidor, são: Atenter pedidos e, em seguida, responder clientes com os dados solicitados;
+Conectar-se com outros servidores para atender uma solicitação específica do cliente; fornecimento de recursos de rede;
+e, sempre esperar um pedido do cliente;
 
 (c) Quais são as características básicas do cliente?
-R:
-
+R: Algumas características básicas do cliente, são: Iniciar pedidos para servidores; esperar por respostas e recebê-las; 
+utilizar recursos de rede; e conectar-se com uma pequena quantidade de servidores simultaneamente. 
 
 2. Com relação ao protocolo de comunicação da internet, responda:
 (a) O que são protocolos de comunicação?
-R:
+R: Protocolos de comunicação são conjuntos de regras caracterizadas por normatizar o funcionamento de um determinado processo
+de comunicação. Eles geram uniformidade entre os participantes do protocolo de comunicação.
 
 (b) Quais são as características básicas de protocolos de comunicação?
-R:
-
+R: Os protocolos de comunicação apresentam um determinado nível de padronização de hardware, além de ter uma organização 
+sistemática com definição hierarquica.
 
 3. Com relação ao protocolo TCP, responda:
 (a) O que são portas no protocolo TCP?
-R:
+R: No protocolo TCP, portas são componentes que conectam os protocolos aos endereços.
 
 (b) Para que servem estas portas?
-R:
-
+R: Elas servem para conectar os protocolos aos endereços de modo que o acesso e uso de um serviço seja permitido.
