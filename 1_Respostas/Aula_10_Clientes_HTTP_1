@@ -1,1 +1,75 @@
+1. Especifique algumas portas importantes pré-definidas para o protocolo TCP/IP.
+R:Porta 21 - FTP ; Porta 23 - Telnet; Porta 25 - SMTP; Porta 53 - Domain Name(Nome do domínio do sistema); 
+Porta 63 - Whois; Porta 70 - Gophher ; Porta 79 - Finger; Porta 80 - HTTP; Porta 110 - POP3; Porta 119 - NNTP.
 
+2. Com relação a endereços IP, responda:
+(a) Qual é a diferença entre endereços IP externos e locais?
+R: O IP externo é usado para identificar um dispositivo conectado à internet.
+E o IP local é usado para identificar um dispositivo conectado à uma rede local. 
+
+(b) Como endereços IP externos são definidos? Quem os define?
+R: Os endereços IP externos são definidos por um conjunto de 4 numeros inteiros, totalizando 4 bytes e descrevem o 
+identificador de rede e o identificador do hóspede. O ICANN (Internet Corporation for Assigned Names and Numbers) 
+se encarrega de atribuir endereços IP públicos, logo, os endereços IP dos computadores diretamente ligados à 
+rede pública da Internet.
+
+(c) Como endereços IP locais são definidos? Quem os define?
+R: O ICANN reservou endereços em cada classe para atribuir um endereço IP aos computadores de uma rede local 
+conectada à Internet sem correr o risco de criar uma confusão de endereços IP na rede das redes. Os seguintes endereços:
+Endereços IP privados de classe A: 10.0.0.1 a 10.255.255.254, permitindo a criação de grandes redes privadas que 
+compreendem milhares de computadores.
+Endereços IP privados de classe B: 172.16.0.1 a 172.31.255.254, permitindo criar redes privadas de porte médio.
+Endereços IP privados de classe C: 192.168.0.1 a 192.168.0.254, para a instalação de pequenas redes privadas.
+
+(d) O que é o DNS? Para que ele serve?
+R: O sistema chamado DNS - Domain Name System permite associar nomes em linguagem corrente aos endereços numéricos. 
+Chama-se resolução de nomes de domínios (ou resolução de endereços) a correlação entre os endereços IP e o nome de 
+domínio associado. Basicamente então esse sistema atribui nomes literais às maquinas.
+
+3. Com relação à pilha de protocolos TCP/IP, responda:
+(a) O que são suas camadas? Para que servem?
+R: Para poder aplicar o modelo TCP/IP em qualquer máquina, ou seja, independentemente do sistema operacional, 
+o sistema de protocolos TCP/IP foi decomposto em vários módulos que efetuam cada tarefa específica. 
+Além disso, estes módulos executam estas tarefas umas após as outras em uma ordem determinada, resultando em um 
+sistema estratificado. Esta , é a razão de o chamarmos de modelo em camadas.
+O termo camada é utilizado para evocar o fato que os dados que transitam na rede atravessam vários níveis de protocolos. 
+Assim, os dados (pacotes de informações) que circulam na rede são tratados por cada camada, sucessivamente, acrescentando 
+um elemento de informação (chamado 'cabeçalho') e, em seguida, transmitindo à camada seguinte.
+O objetivo de um sistema em camadas é separar o problema em partes diferentes de acordo com o seu nível de abstração. 
+Cada camada do modelo se comunica com uma camada adjacente (a de cima ou a de baixo). Cada camada utiliza, assim, os serviços 
+das camadas inferiores e fornece os seus serviços às do nível superior.
+
+(b) Quais são as camadas existentes? Para que servem?
+R: Os principais protocolos da TCP/IP são: Camada de Aplicação (TCP ou UDP), Camada de 
+Internet (IP, ARP, RARP), Camada de Acesso à rede (FDDI, PPP, Ethernet, Anéis de ficha à jeton (Token ring)), 
+Camada de Transporte e Camada Físico.
+A camada de Acesso à rede especifica a forma que os dados devem ser encaminhados independentemente do tipo de rede utilizado, 
+a camada da Internet é encarregada fornecer o pacote de dados (datagrama), a camada do Transporte garante o encaminhamento dos 
+dados, assim como os mecanismos que permitem conhecer o estado da transmissão e a camada de aplicação agrupa os a padrão da 
+rede (Telnet, SMTP, FTP,etc.).
+
+(c) Quais camadas são utilizadas pela biblioteca de sockets?
+R: Considerando a Internet e o TCP/IP, os sockets estão entre a camada de transporte e a de aplicações. Estando nesse ponto de 
+intercessão, eles conseguem fazer uma interface entre a aplicação e rede de maneira bem transparente.
+
+(d) As portas usadas por servidores na função bind() se referem a qual camada?
+R: Se referem à camada de aplicação.
+
+(e) Os endereços usados por clientes na função connect() se referem a qual camada?
+R:Utiliza a camada de rede.
+
+4. Qual é a diferença entre os métodos GET e POST no protocolo HTTP?
+R: Os principais métodos de comunicação HTTP são: GET e POST. Visibilidade – A grande diferença entre os métodos GET e POST 
+provavelmente é a visibilidade. Uma requisição GET é enviada como string anexada a URL, enquanto que a requisição POST é
+encapsulada junto ao corpo da requisição HTTP e não pode ser vista.
+Tamanho – Como a requisição GET é feita via URL, obviamente há uma limitação no tamanho da mensagem enviada. 
+A string não pode conter mais que 255 caracteres(embora exista diferenças entre navegadores, mas em geral o limite é 255). 
+Já na requisição POST não há limitações de comprimento da mensagem, já que a mesma é enviada no corpo da requisição HTTP. 
+Performance – A requisição GET é relativamente mais rápida, já que ela é mais simples. Na requisição POST há uma perda de tempo
+no encapsulamento da mensagem. 
+Tipos – Já que GET é enviado via URL, então nós sabemos que ela só transporta textos. A requisição POST não tem restrições, pode 
+transportar tanto texto, como dados binários. 
+Método HTML Padrão – GET é o método HTML padrão. Para submeter um formulário HTML usando POST é preciso especificar no atributo 
+“method” o valor “POST”.  
+Dados – As requisições GET são limitadas ao padrão ASCII, enquanto que requisições POST também podem usar o atributo “enctype” com
+o valor “multipart/form-data”, que faz uso do padrão UCS(Universal Multiple-Octet Coded Character Set).
