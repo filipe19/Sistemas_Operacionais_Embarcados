@@ -1,0 +1,14 @@
+1. Cite as vantagens e desvantagens das comunicação serial I2C.
+R: Como vantagens a comunicação I2C tem grande velocidade, capacidade de se comunicar com diferentes slaves em uma faixa 
+variada de BaudRate configurável. Como desvantagem a comunicação I2C precisa de resistores de pull-up para manter a tensão na 
+linha SDA e SCL.
+
+2. Considere o caso em que a Raspberry Pi deve receber leituras analógico/digitais de um MSP430, e que a comunicação entre os dois é I2C. 
+É tecnicamente possível que o MSP430 mande os resultados da conversão A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi 
+fazer um pedido ao MSP430? Por quê?
+R: O slave deve esperar o pedido do master, requisitando o endereço e a operação (leitura ou escrita ). Espera devido ao controle do 
+master às requisições, independente do slave.
+
+3. Se o Raspberry Pi tiver de se comunicar com dois dispositivos via I2C, como executar a comunicação com o segundo dispositivo?
+R: Através de diferentes endereços para cada dispositivo I2C pode-se executar uma comunicação com muitos 
+slaves de modo que o master envia, primeiramente, o endereço do slave e executa a operação necessária.
