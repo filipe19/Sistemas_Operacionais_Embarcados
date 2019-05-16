@@ -1,0 +1,18 @@
+1. Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. 
+Justifique sua escolha.
+R: Será utilizada uma RPi Zero Wh por conta da capacidade de processamento satisfatória em controle, gpios disponíveis e do seu 
+tamanho compacto. Como se trata de um robô explorador, a RPi fará processará comandos de controle dos motores, 
+processará e transmitirá imagens e informará a temperatura medida em tempo real. 
+
+2. Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+R: O OS a ser utilizado é o Raspbian Jessie, visto que ele apresenta compatibilidade com as bibliotecas a 
+serem utilizadas e um bom desempenho.
+
+3. Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e 
+forneça os links necessários para isto.
+R: Esse sistema será instalado por meio de uma imagem .ISO pré-compilada, sem interface gráfica para posteriormente 
+instalar a interface gráfica.
+
+4. Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. 
+Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
+R: Esse protótipo do projeto será desenvolvido em Python e posteriormente será desenvolvido em C++ para ser utilizado na RPi.
