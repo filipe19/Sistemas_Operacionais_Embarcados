@@ -1,0 +1,31 @@
+1. Cite as vantagens e desvantagens das comunicação serial:
+(a) Assíncrona (UART).
+R: Comunicação UART: ela permite receber e enviar dados de maneira assíncrona entre 2 dispositivos. 
+Para taxas elevadas de transferência a sincronia entre TX e RX, pode ser perdida já que não há uma linha de clock 
+comum entre os 2 dispositivos.
+
+(b) SPI.
+R: Comunicação SPI: ela permite o esquema Full-Duplex, porém pode ser necessários mais pinos para realizar o controle 
+da seleção de chip CS. Também pode ser desenolvolvido um protocolo para que a troca de dados entre master e slave seja 
+compreensível para ambos.
+
+2. Considere o caso em que a Raspberry Pi deve receber leituras analógico/digitais de um MSP430, e que a comunicação 
+entre os dois é UART. É tecnicamente possível que o MSP430 mande os resultados da conversão A/D a qualquer hora, ou ele 
+deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por quê?
+R: A comunicação UART é assíncrona e permite com que os dados sejam enviados e recebidos de maneira simultânea, cabendo aos 
+dispositivos envolvidos interpretar os dados recebidos e enviados.
+
+3. Considere o caso em que a Raspberry Pi deve receber leituras analógico/digitais de um MSP430, que a comunicação entre os 
+dois seja SPI, e que o MSP430 seja o escravo. É tecnicamente possível que o MSP430 mande os resultados da conversão A/D a 
+qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por quê?
+R: Visto a característica Full-Duplex da comunicação SPI, é possível enviar e receber dados a qualquer momento já que o master 
+e o slave trocam dados entre si de maneira circular.
+
+4. Se o Raspberry Pi tiver de se comunicar com dois dispositivos via UART, como executar a comunicação com o segundo dispositivo?
+R: Nessa situação, a comunicação UART envia um byte adicional para o endereço do dispositivo antes de enviar os dados necessários.
+
+5. Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunicação com o segundo dispositivo?
+R: Pode ser utilizado o esquema Daisy Chain, onde os slaves estão conectados entre si, formando uma cadeia. 
+Assim, o master requer 2 ciclos de leituras para ler os dados referentes aos 2 dispositivos. 
+Ainda no esquema Daisy Chain não é preciso utilizar mais de um CS (Chip Select) para controlar cada um dos slaves. 
+Nessa ligação regular, com mais de uma saída CS os slaves compartilham MISO com o master.
