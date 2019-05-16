@@ -3,10 +3,6 @@ valores 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10 para o servidor, com intervalos de 1 segu
 Depois de o cliente enviar o número 10, ele aguarda 1 segundo e termina a execução. 
 O servidor escreve na tela cada valor recebido, e quando ele receber o valor 10, ele termina a execução.
 R:
-Crie dois programas em C para criar um cliente e um servidor. 
-Faça com que o cliente envie os valores 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10 para o servidor, com intervalos de 1 segundo 
-entre cada envio. Depois de o cliente enviar o número 10, ele aguarda 1 segundo e termina a execução. 
-O servidor escreve na tela cada valor recebido, e quando ele receber o valor 10, ele termina a execução.
 
 ##Client
 #include <stdio.h>
