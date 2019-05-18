@@ -16,3 +16,4 @@ instalar a interface gráfica.
 4. Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. 
 Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
 R: Esse protótipo do projeto será desenvolvido em Python e posteriormente será desenvolvido em C++ para ser utilizado na RPi.
+
