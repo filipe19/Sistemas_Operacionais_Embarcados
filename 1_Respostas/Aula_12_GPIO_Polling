@@ -63,6 +63,6 @@ int main( int argc, char const *argv[])
   gitalRead( IN_PIN) == 0);
    usleep( delay_time) ;
   }
-  return 0;
+  return 0 
   
 }
