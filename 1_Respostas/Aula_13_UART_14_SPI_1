@@ -28,4 +28,4 @@ R: Nessa situação, a comunicação UART envia um byte adicional para o endere�
 R: Pode ser utilizado o esquema Daisy Chain, onde os slaves estão conectados entre si, formando uma cadeia. 
 Assim, o master requer 2 ciclos de leituras para ler os dados referentes aos 2 dispositivos. 
 Ainda no esquema Daisy Chain não é preciso utilizar mais de um CS (Chip Select) para controlar cada um dos slaves. 
-Nessa ligação regular, com mais de uma saída CS os slaves compartilham MISO com o master.
+Nessa ligação regular, com mais de uma saída CS os slaves compartilham MISO com o master.  
