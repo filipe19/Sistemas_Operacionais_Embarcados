@@ -12,3 +12,4 @@ master às requisições, independente do slave.
 3. Se o Raspberry Pi tiver de se comunicar com dois dispositivos via I2C, como executar a comunicação com o segundo dispositivo?
 R: Através de diferentes endereços para cada dispositivo I2C pode-se executar uma comunicação com muitos 
 slaves de modo que o master envia, primeiramente, o endereço do slave e executa a operação necessária.
+15
