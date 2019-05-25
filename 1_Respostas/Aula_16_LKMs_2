@@ -1,0 +1,41 @@
+1. O que é memória virtual?
+R: Memória virtual consiste em uma técnica em que usa-se a memória secundária como uma cache para armazenamento
+secundario, permitindo um compartilhamento seguro de dados ao usuário. 
+Essa técnica inclui recursos de hardware e de software.
+
+2. Qual é a diferença entre o user space e o kernel space?
+R:A RAM é dividida em duas partes, o user space e o Kernel space.
+O user space é o conjunto de locais onde são executados os processos comuns do usuário. Esses processos não 
+podem acessar o kernel diretamente, apenas algumas partes através de chamadas do sistema.
+O Kernel space está na parte dedicada da memória. Sua função é gerenciar processos/aplicativos em execução
+no espaço do usuário, podendo acessar toda a memória.
+
+3. Qual é a diferença de acesso à memória virtual entre o user space e o kernel space?
+R:
+
+4. Em termos práticos, por que é feita esta distinção entre user space e kernel space?
+R:
+
+5. Qual é a diferença entre Linux e GNU/Linux?
+R:
+
+6. O que é um Linux Kernel Module (LKM)? Quais são suas vantagens?
+R:
+
+7. O que são device drivers?
+R:
+
+8. Cite uma situação prática em que vale a pena desenvolver um device driver.
+R:
+
+9. O que é a General Public License (GPL)? Quais são suas características?
+R:
+
+Dicas:
+
+https://developer.ibm.com/articles/l-linux-kernel/
+https://www.gnu.org/licenses/gpl-faq.html
+https://www.kernel.org/doc/html/v4.16/process/howto.html
+https://en.wikipedia.org/wiki/User_space
+https://wiki.archlinux.org/index.php/Kernel_module
+http://derekmolloy.ie/writing-a-linux-kernel-module-part-1-introduction/
