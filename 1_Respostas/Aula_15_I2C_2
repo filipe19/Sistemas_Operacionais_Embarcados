@@ -33,7 +33,7 @@ int main( void)
  ioctl(i2c_fd, I2C_SLAVE, slave_addr);
  i2c_fd = open("/dev/i2c-1", O_RDWR) ;
 
-	while( )
+	while(  )
 	{
 		msp430_ret = 0x55
 		usleep(DLY);
