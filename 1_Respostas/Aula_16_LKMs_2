@@ -11,25 +11,46 @@ O Kernel space está na parte dedicada da memória. Sua função é gerenciar pr
 no espaço do usuário, podendo acessar toda a memória.
 
 3. Qual é a diferença de acesso à memória virtual entre o user space e o kernel space?
-R:
+R: sabe-se que a RAM é dividida em duas regiões distintas - o espaço do usuário e o espaço do kernal.
+Espaço do Usuário - É um conjunto de locais onde os processos normais do usuário são executados. 
+Esses processos não podem acessar o espaço kernal diretamente. Alguma parte do espaço do kernal pode ser 
+acessada por meio de chamadas do sistema. Essas chamadas do sistema atuam como interrupções de 
+software no espaço do kernal.
+Espaço Kernal - o kernal corre na parte dedicada da memória. A função do espaço kernal é gerenciar 
+aplicativos / processos em execução no espaço do usuário. Pode acessar toda a memória. 
 
 4. Em termos práticos, por que é feita esta distinção entre user space e kernel space?
-R:
+R: Por que, se um processo executar uma chamada de sistema, uma interrupção de software é enviada para o kernal,
+que então despacha um manipulador de interrupção apropriado.
 
 5. Qual é a diferença entre Linux e GNU/Linux?
-R:
+R: O GNU é responsável por toda uma cadeia de ferramenta que possibilitam o desenvolvimento de programas 
+para o Linux. Um exemplo prático de um grande software GNU é o GNOME quem vem a ser GNU Network 
+Object Model Environment. E o Linux é como um S.O, um software que consegue se comunicar com o hardware, 
+isso vai desde um simples teclado USB até a luz de fundo de uma tela em um notebook.
 
 6. O que é um Linux Kernel Module (LKM)? Quais são suas vantagens?
-R:
+R: Um kernel modul é um arquivo objeto que contém código para estender o núcleo que está sendo executado, ou 
+o chamado núcleo base, de um sistema operacional. Eles são usados para adicionar suporte para 
+novos hardwares (como controladores de dispositivos) e/ou sistemas de arquivos, ou para adicionar 
+chamadas de sistema. 
 
 7. O que são device drivers?
-R:
+R: São pequenos programas que fazem a comunicação entre o Sistema Operacional da máquina e o Hardware.
+Possuem a função de aceitar requerimentos abstratos do software independente do dispositivo acima dele e 
+garantir que a solicitação seja executada, permitindo que o software interaja com o dispositivo.
 
 8. Cite uma situação prática em que vale a pena desenvolver um device driver.
-R:
+R: Situação em que os dispositivos, usando comandos genéricos de alto-nível, como print, que imprime um texto.. 
+O driver converte esses comandos genéricos e converte para um código de baixo-nível interpretado pelo dispositivo.
 
 9. O que é a General Public License (GPL)? Quais são suas características?
-R:
+R: É a designação da licença de software idealizada por Richard Matthew Stallman em 1989, no âmbito do projeto GNU 
+da Free Software Foundation (FSF). Ele criou a licença para o Projeto GNU de acordo com as definições de software 
+livre da Free Software Foundation.
+É uma licença copyleft, trabalhos derivados de um produto originalmente licenciado pela GPL só podem ser 
+distribuídos se utilizarem a mesma licença. Geralmente são utilizadas por projetos de software livre e 
+de código aberto.
 
 Dicas:
 
